@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+@font-face {
+  font-family: 'IRANSansX';
+  src: url(assets/fonts/IranSanX/IRANSansX-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url(assets/fonts/IranSanX/IRANSansX-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IYekan';
+  src: url(assets/fonts/IranSanX/IRANSansXFaNum-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: IRANSansX, "Trebuchet MS", Arial, Helvetica, sans-serif;
+  // box-sizing: border-box;
+}
+
+
+

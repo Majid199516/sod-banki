@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="form-box" [formGroup]="bankInterest">
+    <div class="input-box">
+      <input class="input mandatory" type="nuberic" name="years" id="years" placeholder=" " formControlName="yaers">
+      <label for="years">
+        سال باز پرداخت
+      </label>
+    </div>
+    <div class="input-box">
+      <input class="input" type="nuberic" name="payPerMonth" id="payPerMonth" placeholder=" " formControlName="payPerMonth">
+      <label for="payPerMonth">
+        مبلغ قسط ماهانه
+      </label>
+    </div>
+    <div class="input-box">
+      <input class="input mandatory" type="nuberic" name="profit" id="profit" placeholder=" " formControlName="profit">
+      <label for="profit">
+        سود سالانه
+      </label>
+    </div>
+    <div class="input-box"
+    ><button class="btn" (click)="calc()" [disabled]="" >
+      محاسبه
+    </button>
+  </div>
+  </div>
+  <div class="result-container">
+    <app-result></app-result>
+  </div>
+</div>
