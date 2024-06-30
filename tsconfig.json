@@ -17,6 +17,7 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "strictPropertyInitialization": false,
+    "noImplicitAny": false,
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
@@ -26,6 +27,7 @@
     ]
   },
   "angularCompilerOptions": {
+    "noImplicitAny": false,
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
