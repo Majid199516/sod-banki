@@ -1,88 +1,105 @@
-.container{
+.container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 16px;
   gap: 10px;
-  .form-box{
+  .form-box {
     width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 18px;
-      // align-items: center;
-      // justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     .input-box {
       width: 100%;
       height: 40px;
       position: relative;
       transition: all ease-in-out 300ms;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .info{
+        width: max-content;
+      
+      }
 
-
-      .input{
+      .input {
         width: 100%;
-        height: 100%;
-        border: 1px solid #2FA08E;
+        height: 40px;
+        border: 1px solid #2fa08e;
         outline: unset;
         border-radius: 8px;
         cursor: pointer;
         font-size: 16px;
         padding: 8px;
-      // transition: all ease-in-out 300ms;
+        font-family: IYekan;
+        // transition: all ease-in-out 300ms;
 
         &:focus {
-        border: 2px solid #046343;
+          border: 2px solid #2fa08e;
 
-          ~label{
-            color: #2FA08E;
+          ~ label {
+            color: #2fa08e;
             transition: all 0.15s ease !important;
             transform: translate(0, -20px);
-            background: linear-gradient(0,
-            #ffffff 70%,
-            #00ffff00 50%) !important;
-
-
+            background: linear-gradient(
+              0,
+              #ffffff 70%,
+              #00ffff00 50%
+            ) !important;
           }
         }
         &:not(:placeholder-shown) {
-          &+label {
+          & + label {
             transform: translate(0, -20px);
-            color: #2FA08E;
+            color: #2fa08e;
             transition: all 0.15s ease !important;
-            background: linear-gradient(0,
-                #ffffff 70%,
-                #00ffff00 50%) !important;
+            background: linear-gradient(
+              0,
+              #ffffff 70%,
+              #00ffff00 50%
+            ) !important;
           }
-      }}
-      .btn{
+        }
+        &.ng-invalid {
+          &.ng-touched{
+
+            color: red;
+            border: solid 1px red;
+            ~label{
+              color: red;
+            }
+          }
+        }
+      }
+      .btn {
         width: 100%;
         height: 100%;
-        background-color: #2FA08E;
+        background-color: #2fa08e;
         color: #fff;
         border: none;
         border-radius: 8px;
         cursor: pointer;
         transition: all ease-in-out 300ms;
-        &:active{
+        &:active {
           // opacity: 0.5;
-          border: 2px solid #046343;
-
+          border: 3px solid #046343;
         }
-        &:hover{
+        &:hover {
           opacity: 0.8;
         }
-
-
       }
-      label{
+      label {
+        color: #046343;
         font-size: 16px;
         position: absolute;
         bottom: 10px;
         right: 10px;
         padding: 0 3px;
       }
-
     }
   }
 }

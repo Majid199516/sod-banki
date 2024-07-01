@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+// import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 import { AppComponent } from './app.component';
@@ -17,7 +17,7 @@ import { ResultComponent } from './sod-banki/result/result.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule
+    // MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
